@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Page title</title>
+    <meta name="description" content="abc">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form for Programming Studying Timeline</h1>
+    <p id="description">Questions about your habit in learning coding</p>
+    <form action="" id="survey-form">    
+      <label for="name" id="name-label">Enter your full name here:
+        <input type="text" id="name" placeholder="First-name Last-name" required>
+      </label>
+      <label for="email" id="email-label">Enter your email here:
+        <input type="email" id="email" placeholder="abcd@something.something" required>
+      </label>
+      <label for="number" id="number-label">Enter you number:
+        <input type="number" placeholder="between min and max" id="number">
+      </label>
+      <select id="dropdown">
+        <option value="">--please choose an option--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <div id="radio-group">
+        <label for="rb-1">
+          <input type="radio" id="rb-1" name="rb-group" value="option-1" checked>option 1.
+        </label>
+        <label for="rb-2">
+          <input type="radio" id="rb-2" name="rb-group" value="option-2">option 2.
+        </label>
+        <label for="rb-3">
+          <input type="radio" id="rb-3" name="rb-group" value="option-3">option 3.
+        </label>
+      </div>
+      <div id="checkbox-group">
+        <label for="cb-1">
+          <input type="checkbox" id="cb-1" name="cb-group" value="option-1" checked>option 1.
+        </label>
+        <label for="cb-2">
+          <input type="checkbox" id="cb-2" name="cb-group" value="option-2">option 2.
+        </label>
+        <label for="cb-3">
+          <input type="checkbox" id="cb-3" name="cb-group" value="option-3">option 3.
+        </label>
+      </div>
+      <textarea name="textArea" id="text-area" cols="30" rows="10"></textarea>
+      <input type="button" id="submit" >
+    </form>
+  </body>
+</html>
