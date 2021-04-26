@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  margin: 3.125rem auto 0 auto;
+}
+#title{
+  padding: 0 0.625rem;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+#description{
+  text-align: center;
+}
+
+#survey-form{
+ background-color: rgba(146, 216, 216, 0.5);
+ margin: 2rem 8rem;
+ padding: 2rem 2rem;
+ border-radius: 20px;
+ min-width: 60%;
+}
+label{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.text_input{
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 0.2rem;
+  width: 100%;
+  text-indent: 0.5rem;
+  border-radius: 7px;
+}
+#radio-question, #checkbox-question, #texArea-question{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+#dropdown{
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 0.2rem;
+  width: 100%;
+  text-indent: 0.1rem;
+  border-radius: 7px;
+}
+#text-area{
+  height: 120px;
+  width: 100%;
+  text-indent: 0;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+#submit{
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  background: rgba(4, 161, 31, 0.74);
+}
