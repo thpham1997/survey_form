@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
+
     <h1 id="title">Survey Form for Programming Studying Timeline</h1>
     <p id="description">Questions about your habit in learning coding</p>
+
     <form action="" id="survey-form">    
-      <label for="name" id="name-label">Enter your full name here:
-        <input type="text" id="name" placeholder="First-name Last-name" required>
-      </label>
-      <label for="email" id="email-label">Enter your email here:
-        <input type="email" id="email" placeholder="abcd@something.something" required>
-      </label>
-      <label for="number" id="number-label">Enter you number:
-        <input type="number" placeholder="between min and max" id="number">
-      </label>
+
+      <div id="text_fields">
+        <div>
+          <label for="name" id="name-label" >Enter your full name here:
+          </label>
+          <input type="text" id="name" class="text_input" placeholder="First-name Last-name" required>
+        </div>
+        <div>
+          <label for="email" id="email-label">Enter your email here:
+          </label>
+          <input type="email" id="email" class="text_input" placeholder="abcd@something.something" required> 
+        </div>
+        <div>
+          <label for="number" id="number-label">How many hours you learn per day:
+          </label>
+          <input type="number" min="0" max="20" placeholder="between 0 and 20" id="number" class="text_input" >
+        </div>
+      </div>
+      <label for="dropdown" id="dropdown-label">How many days you learn per week:</label>
       <select id="dropdown">
         <option value="">--please choose an option--</option>
         <option value="1">1</option>
@@ -26,31 +38,43 @@
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
       </select>
+
       <div id="radio-group">
+        <p id="radio-question">How do you learn:</p>
         <label for="rb-1">
-          <input type="radio" id="rb-1" name="rb-group" value="option-1" checked>option 1.
+          <input type="radio" id="rb-1" name="rb-group" value="myself" checked>By myself.
         </label>
         <label for="rb-2">
-          <input type="radio" id="rb-2" name="rb-group" value="option-2">option 2.
+          <input type="radio" id="rb-2" name="rb-group" value="group">In Group.
         </label>
         <label for="rb-3">
-          <input type="radio" id="rb-3" name="rb-group" value="option-3">option 3.
+          <input type="radio" id="rb-3" name="rb-group" value="instructor">With Instructor.
         </label>
       </div>
+
       <div id="checkbox-group">
+        <p id="checkbox-question">Which one is you main resources for learning:</p>
         <label for="cb-1">
-          <input type="checkbox" id="cb-1" name="cb-group" value="option-1" checked>option 1.
+          <input type="checkbox" id="cb-1" name="cb-group" value="internet" checked>The Internet.
         </label>
         <label for="cb-2">
-          <input type="checkbox" id="cb-2" name="cb-group" value="option-2">option 2.
+          <input type="checkbox" id="cb-2" name="cb-group" value="martirials">Hard martirials.
         </label>
         <label for="cb-3">
-          <input type="checkbox" id="cb-3" name="cb-group" value="option-3">option 3.
+          <input type="checkbox" id="cb-3" name="cb-group" value="ins-firend">Instructors or friends.
         </label>
       </div>
-      <textarea name="textArea" id="text-area" cols="30" rows="10"></textarea>
-      <input type="button" id="submit" >
+
+      <div id="textArea">
+        <p id="texArea-question">How do you think to improve self-learning:</p>
+        <textarea  id="text-area" placeholder="Your comment here...">
+        </textarea>
+      </div>   
+      <button id="submit" type="submit">Submit</button>
+
     </form>
   </body>
 </html>
