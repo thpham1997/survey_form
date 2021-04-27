@@ -2,15 +2,17 @@
   box-sizing: border-box;
 }
 body{
+  background: url(https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
-  color: rgb(0, 0, 0);
+  color: rgb(106, 209, 181);
   margin: 0;
   margin: 3.125rem auto 0 auto;
 }
 #title{
+  color: white;
   padding: 0 0.625rem;
   position: relative;
   display: block;
@@ -18,15 +20,18 @@ body{
   margin: auto;
 }
 #description{
+  color: white;
   text-align: center;
 }
 
 #survey-form{
- background-color: rgba(146, 216, 216, 0.5);
- margin: 2rem 8rem;
- padding: 2rem 2rem;
- border-radius: 20px;
- min-width: 60%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+  border: medium;
+  margin: 2rem 8rem;
+  padding: 2rem 2rem;
+  border-radius: 20px;
+  min-width: 60%;
 }
 label{
   display: flex;
